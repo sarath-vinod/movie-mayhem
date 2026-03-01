@@ -1,44 +1,40 @@
 # Movie Mayhem
 
-## Objective
-Create a movies site that allows the user to display, add, update, and delete movies. 
+Web Security project: a PHP + SQLite movie app in two versions—**vulnerable** (for learning attacks) and **secured** (with fixes). **No MySQL or XAMPP required.**
 
-## Run the project
+## Structure
 
-1. **Initialize the database** (once):  
-   `php init_db.php`
-
-2. **Start the server** from the project folder:
-   - **PowerShell:** `.\run-server.ps1`  
-   - **Or:** `php -S localhost:8765 router.php`
-
-3. Open **http://localhost:8765** in your browser.
-
-## Import Database
-The provided SQL file can be imported by using the following command in your terminal where `USER` is your default database username (i.e. root)
-
-```bash
-mysql -u USER -p < movie_mayhem.sql
+```
+movie-mayhem/
+├── index.php          # Landing page – choose Vulnerable or Secured
+├── landing.css
+├── setup.php          # One-time setup: creates db/ and SQLite databases
+├── db/                # Created by setup (vulnerable.sqlite, secured.sqlite)
+├── vulnerable/        # Intentionally vulnerable app (SQLite)
+│   ├── config.php, login.php, register.php, logout.php
+│   ├── index.php, movie.php, add.php, edit.php, delete.php, search.php
+│   ├── functions.php, header.php, style.css
+│   └── database.sql   # Reference schema (actual DB created by setup.php)
+└── secured/           # Hardened app (SQLite, prepared statements, auth, audit)
+    ├── config.php, login.php, register.php, logout.php
+    ├── index.php, movie.php, add.php, edit.php, delete.php, search.php
+    ├── functions.php, header.php, style.css
+    ├── encryption.php, BACKUP_INSTRUCTIONS.md
+    └── database.sql   # Reference schema
 ```
 
-## Adding ENV Support
-The `.env` file is used to store envorimental variables and values that should NOT be track by Git. The PHP dotenv package adds support for retrieve values from a `.env` file and can be added to a project using composer. 
+## Run (PHP only)
 
-```bash
-composer require vlucas/phpdotenv
-```
+1. **One-time setup** – create the SQLite databases:
+   ```bash
+   php setup.php
+   ```
 
-After installing the package, the `.env` file can be loaded into your application by ading the following PHP code:
+2. **Start the server:**
+   ```bash
+   php -S localhost:8000
+   ```
 
-```php
-require_once 'vendor/autoload.php';
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
-$dotenv->safeLoad();
-```
+3. Open **http://localhost:8000** and use the red (Vulnerable) or green (Secured) button.
 
-The values of the `.env` file are accessible using the `$_ENV` superglobal variable. 
-
-```php
-$password = $_ENV['DB_PASSWORD'];
-```
-
+No MySQL or XAMPP needed.
