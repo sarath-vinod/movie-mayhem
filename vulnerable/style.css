@@ -96,3 +96,5 @@ html, body {
     text-decoration: none;
 }
 .movie-description { margin-top: 1rem; white-space: pre-wrap; font-size: 1rem; line-height: 1.6; color: #444; }
+.form-hint { font-size: 0.875rem; color: #555; margin: -0.25rem 0 0.5rem 0; }
+.xss-payload-copy { width: 100%; font-family: ui-monospace, monospace; font-size: 0.75rem; padding: 10px; background: #f5f5f5; border: 1px solid #ccc; border-radius: 4px; margin-bottom: 0.5rem; cursor: text; }

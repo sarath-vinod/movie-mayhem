@@ -25,10 +25,11 @@ movie-mayhem/
 
 ## Run (PHP only)
 
-1. **One-time setup** – create the SQLite databases:
+1. **One-time setup** – create the SQLite databases (and seed demo users):
    ```bash
    php setup.php
    ```
+   If you run `setup.php` again later, existing databases are **not** overwritten: registered users and data are kept so you can log in next time.
 
 2. **Start the server:**
    ```bash
