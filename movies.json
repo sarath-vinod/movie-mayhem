@@ -1,0 +1,212 @@
+[
+	{
+		"id": 1,
+		"title": "Labyrinth",
+		"director": "Jim Henson",
+		"year": "1986",
+		"genre": "Fantasy"
+	},
+	{
+		"id": 2,
+		"title": "Highlander",
+		"director": "Russell Mulcahy",
+		"year": "1986",
+		"genre": "Fantasy"
+	},
+	{
+		"id": 3,
+		"title": "Alien",
+		"director": "Ridley Scott",
+		"year": "1979",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 4,
+		"title": "Conan the Barbarian",
+		"director": "John Milius",
+		"year": "1982",
+		"genre": "Fantasy"
+	},
+	{
+		"id": 5,
+		"title": "The Hobbit: An Unexpected Journey",
+		"director": "Peter Jackson",
+		"year": "2012",
+		"genre": "Fantasy"
+	},
+	{
+		"id": 6,
+		"title": "The Dark Crystal",
+		"director": "Jim Henson",
+		"year": "1982",
+		"genre": "Fantasy"
+	},
+	{
+		"id": 7,
+		"title": "Star Wars: A New Hope",
+		"director": "George Lucas",
+		"year": "1977",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 8,
+		"title": "Harry Potter and the Order of the Phoenix",
+		"director": "David Yates",
+		"year": "2007",
+		"genre": "Fantasy"
+	},
+	{
+		"id": 9,
+		"title": "Fantastic Beasts and Where to Find Them ",
+		"director": "David Yates",
+		"year": "2016",
+		"genre": "Fantasy"
+	},
+	{
+		"id": 10,
+		"title": "Excalibur",
+		"director": "John Boorman",
+		"year": "1981",
+		"genre": "Fantasy"
+	},
+	{
+		"id": 11,
+		"title": "Time Bandits",
+		"director": "Terry Gilliam",
+		"year": "1981",
+		"genre": "Fantasy"
+	},
+	{
+		"id": 12,
+		"title": "Pan's Labyrinth",
+		"director": "Guillermo Del Toro",
+		"year": "2006",
+		"genre": "Fantasy"
+	},
+	{
+		"id": 13,
+		"title": "Blade Runner",
+		"director": "Ridley Scott",
+		"year": "1982",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 14,
+		"title": "Interstellar",
+		"director": "Christopher Nolan",
+		"year": "2014",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 15,
+		"title": "A.I. Artificial Intelligence",
+		"director": "Steven Spielberg",
+		"year": "2001",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 16,
+		"title": "The Matrix",
+		"director": "The Wachowskis",
+		"year": "1999",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 17,
+		"title": "Gattaca",
+		"director": "Andrew Niccol",
+		"year": "1997",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 18,
+		"title": "Avatar",
+		"director": "James Cameron",
+		"year": "2009",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 19,
+		"title": "Moon",
+		"director": "Duncan Jones",
+		"year": "2009",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 20,
+		"title": "Galaxy Quest",
+		"director": "Dean Parisot",
+		"year": "1999",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 21,
+		"title": "The Fifth Element",
+		"director": "Luc Besson",
+		"year": "1997",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 22,
+		"title": "Inception",
+		"director": "Christopher Nolan",
+		"year": "2010",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 23,
+		"title": "District 9",
+		"director": "Neill Blokamp",
+		"year": "2009",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 24,
+		"title": "Her",
+		"director": "Spike Jonez",
+		"year": "2013",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 25,
+		"title": "Pulp Fiction",
+		"director": "Quentin Tarantino",
+		"year": "1994",
+		"genre": "Drama"
+	},
+	{
+		"id": 26,
+		"title": "Reservoir Dogs",
+		"director": "Quentin Tarantino",
+		"year": "1992",
+		"genre": "Drama"
+	},
+	{
+		"id": 27,
+		"title": "Transcendence",
+		"director": "George Lucas",
+		"year": "2014",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 28,
+		"title": "Contact",
+		"director": "Steven Speilberg",
+		"year": "1997",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 29,
+		"title": "WALL-E",
+		"director": "Brad Bird",
+		"year": "2008",
+		"genre": "Sci-Fi"
+	},
+	{
+		"id": 31,
+		"title": "Inside Out",
+		"director": "Peter Docter",
+		"year": "2015",
+		"genre": "Drama"
+	}
+]
