@@ -1,6 +1,6 @@
 # Movie Mayhem
 
-Web Security project: a PHP + SQLite movie app in two versions—**vulnerable** (for learning attacks) and **secured** (with fixes). **No MySQL or XAMPP required.**
+Web Security project: a PHP + SQLite movie app in two versions—**vulnerable** (for learning attacks) and **secured** (with fixes). 
 
 ## Structure
 
