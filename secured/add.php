@@ -41,6 +41,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <main class="main">
         <?php require 'header.php'; ?>
+        <div class="form-page">
+        <div class="form-card">
         <h2 class="form-title">Add Movie</h2>
         <form class="form" method="post" enctype="multipart/form-data">
             <label for="title">Title</label>
@@ -64,6 +66,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="file" id="poster" name="poster" class="form-control" accept=".jpg,.jpeg,.png">
             <button type="submit" class="button">Add Movie</button>
         </form>
+        </div>
+        </div>
     </main>
 </body>
 </html>

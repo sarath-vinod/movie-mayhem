@@ -45,6 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <main class="main">
         <?php require 'header.php'; ?>
+        <div class="form-page">
+        <div class="form-card">
         <h2 class="form-title">Register</h2>
         <?php if ($error): ?>
             <p class="error"><?php echo htmlspecialchars($error, ENT_QUOTES, 'UTF-8'); ?></p>
@@ -62,7 +64,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button type="submit" class="button">Register</button>
         </form>
         <?php endif; ?>
-        <p><a href="login.php">Already have an account? Log in</a></p>
+        </div>
+        <p class="form-footer"><a href="login.php">Already have an account? Log in</a></p>
+        </div>
     </main>
 </body>
 </html>

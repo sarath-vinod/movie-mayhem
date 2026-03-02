@@ -47,6 +47,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <main class="main">
         <?php require 'header.php'; ?>
+        <div class="form-page">
+        <div class="form-card">
         <h2 class="form-title">Login</h2>
         <?php if ($error): ?>
             <p class="error"><?php echo $error; ?></p>
@@ -58,7 +60,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="password" id="password" name="password" class="form-control" required>
             <button type="submit" class="button">Login</button>
         </form>
-        <p><a href="register.php">Don't have an account? Register</a></p>
+        </div>
+        <p class="form-footer"><a href="register.php">Don't have an account? Register</a></p>
+        </div>
     </main>
 </body>
 </html>

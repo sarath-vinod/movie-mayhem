@@ -30,6 +30,14 @@ html, body {
     text-decoration: none;
 }
 .nav-link:hover { color: #fff; }
+.form-page { max-width: 480px; margin: 0 auto; }
+.form-card { background: #fff; border: 1px solid #092441; border-radius: 8px; padding: 28px; box-shadow: 0 2px 12px rgba(9,36,65,0.08); }
+.form-card .form-title { margin: 0 0 1.25rem 0; text-align: center; }
+.form-card .error { display: block; margin-bottom: 0.5rem; }
+.form-card .success { display: block; margin-bottom: 0.5rem; }
+.form-card .form { max-width: 100%; margin: 0; }
+.form-card + .form-footer { text-align: center; margin-top: 1.25rem; }
+.form-card + .form-footer a { color: #092441; font-weight: 600; }
 .form { max-width: 500px; display: grid; gap: 1rem; }
 .form label { font-size: 0.9375rem; font-weight: 600; color: #333; }
 .form-search { max-width: 400px; margin: 0 auto 2rem auto; }
@@ -51,10 +59,23 @@ html, body {
     cursor: pointer;
 }
 .button.danger { background-color: #c00; }
-.movies { display: flex; flex-wrap: wrap; gap: 18px; }
-.movie { display: grid; grid-template-rows: auto auto 1fr; justify-items: center; align-content: center; gap: 8px; width: 200px; min-height: 140px; padding: 12px; background: #fff; border: 1px solid #092441; color: #1a1a1a; text-align: center; text-decoration: none; overflow: hidden; }
+.movies { display: flex; flex-wrap: wrap; gap: 18px; align-items: stretch; }
+.movie-card { position: relative; width: 200px; height: 380px; flex-shrink: 0; }
+.movie { display: flex; flex-direction: column; height: 100%; padding: 12px; background: #fff; border: 1px solid #092441; color: #1a1a1a; text-align: center; text-decoration: none; overflow: hidden; box-sizing: border-box; }
+.movie-card:has(.movie-menu-btn) .movie { padding-top: 36px; }
 .movie:hover { background-color: #092441; color: #fff; }
 .movie:hover .movie-poster { opacity: 0.9; }
+.movie-poster-slot { width: 176px; height: 240px; flex-shrink: 0; margin: 0 auto 8px; background: #e8e8e8; overflow: hidden; border-radius: 4px; display: flex; align-items: center; justify-content: center; }
+.movie-poster-slot .movie-poster { width: 100%; height: 100%; object-fit: cover; display: block; }
+.movie-menu-btn { position: absolute; top: 6px; right: 6px; z-index: 2; width: 32px; height: 32px; padding: 0; border: none; border-radius: 4px; background: rgba(0,0,0,0.06); color: #333; font-size: 1.25rem; line-height: 1; cursor: pointer; }
+.movie-menu-btn:hover { background: rgba(0,0,0,0.12); color: #092441; }
+.movie-menu-dropdown { display: none; position: absolute; top: 38px; right: 0; z-index: 3; min-width: 120px; background: #fff; border: 1px solid #ccc; border-radius: 6px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); overflow: hidden; }
+.movie-menu-dropdown.is-open { display: block; }
+.movie-menu-dropdown a { display: block; padding: 10px 14px; color: #092441; text-decoration: none; font-size: 0.875rem; font-weight: 600; border-bottom: 1px solid #eee; }
+.movie-menu-dropdown a:hover { background: #f0f4f8; }
+.movie-menu-dropdown form { margin: 0; }
+.movie-menu-delete { display: block; width: 100%; padding: 10px 14px; border: 0; background: none; color: #c00; font-size: 0.875rem; font-weight: 600; cursor: pointer; text-align: left; }
+.movie-menu-delete:hover { background: #fde8e8; }
 .movie .movie-title {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.25rem;
@@ -64,7 +85,9 @@ html, body {
 }
 .movie .movie-year { font-size: 0.875rem; opacity: 0.9; }
 .movie .movie-meta { font-size: 0.8125rem; opacity: 0.85; font-weight: 500; }
-.movie-poster { width: 200px; height: 300px; object-fit: cover; display: block; }
+.movie .movie-title { flex-shrink: 0; }
+.movie .movie-year { flex-shrink: 0; }
+.movie .movie-meta { flex-shrink: 0; margin-top: auto; }
 .movie-details .movie-poster { margin-bottom: 1rem; }
 .form-title {
     font-family: 'Bebas Neue', sans-serif;

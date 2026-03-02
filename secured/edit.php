@@ -49,6 +49,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <main class="main">
         <?php require 'header.php'; ?>
+        <div class="form-page">
+        <div class="form-card">
         <h2 class="form-title">Edit Movie</h2>
         <form class="form" method="post" enctype="multipart/form-data">
             <input type="hidden" name="id" value="<?php echo (int)$movie['id']; ?>">
@@ -77,6 +79,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <input type="hidden" name="id" value="<?php echo (int)$movie['id']; ?>">
             <button type="submit" class="button danger">Delete Movie</button>
         </form>
+        </div>
+        </div>
     </main>
 </body>
 </html>
